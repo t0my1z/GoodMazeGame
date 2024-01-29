@@ -67,7 +67,7 @@ void MazeGame::CreateMazeEx12()
     PrintMaze(MazeElements);
 }
 
-void MazeGame::CreateMazeEx3(MazeBaseFactory*& factory, short offset)
+void MazeGame::CreateMazeEx3(MazeBaseFactory* factory, short offset)
 {
     std::vector<MazeElement*> MazeElements;
     //Add walls
@@ -86,11 +86,18 @@ void MazeGame::CreateMazeEx3(MazeBaseFactory*& factory, short offset)
     MazeElements.push_back(factory->AddWall({ static_cast<short>(offset + 6),1 }));
     MazeElements.push_back(factory->AddWall({ static_cast<short>(offset + 6),2 }));
     //Add door
-    MazeElements.push_back(factory->AddDoor({ 3, 1 }));
-    //Add walls
-    MazeElements.push_back(factory->AddRoom({ 2,1 }));
-    MazeElements.push_back(factory->AddRoom({ 5,1 }));
+    MazeElements.push_back(factory->AddDoor({ static_cast<short>(offset + 3),1 }));
+    //Add rooms
+    MazeElements.push_back(factory->AddRoom({ static_cast<short>(offset + 2),1 }));
+    MazeElements.push_back(factory->AddRoom({ static_cast<short>(offset + 5),1 }));
     //Print Maze
+    PrintMaze(MazeElements);
+}
+
+void MazeGame::CreateMazeEx4(MazeBuilderBase*& builder)
+{
+    std::vector<MazeElement*> MazeElements = builder->CreateMaze();
+
     PrintMaze(MazeElements);
 }
 

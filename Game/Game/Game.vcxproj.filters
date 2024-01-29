@@ -54,6 +54,15 @@
     <ClCompile Include="Private\Factories\MazeConcreteFactory2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Private\Builders\MazeBuilderBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\Builders\MazeConcreteBuilder1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\Builders\MazeConcreteBuilder2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Public\MazeElements\MazeElement.h">
@@ -93,6 +102,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Public\Factories\MazeConcreteFactory2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\Builders\MazeBuilderBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\Builders\MazeConcreteBuilder1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\Builders\MazeConcreteBuilder2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

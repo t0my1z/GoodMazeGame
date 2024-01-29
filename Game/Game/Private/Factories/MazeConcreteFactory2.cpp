@@ -25,13 +25,13 @@ BaseRoom* MazeConcreteFactory2::AddRoom(Transform pos) const
     }
     else
     {
-        //return new BombRoom(, pos);
+        return new BombRoom(pos);
     }
 }
 
 BaseWall* MazeConcreteFactory2::AddWall(Transform pos) const
 {
-    //return new BreakableWall(pos);
+    return new BreakableWall(pos);
 }
 
 BaseDoor* MazeConcreteFactory2::AddDoor(Transform pos) const

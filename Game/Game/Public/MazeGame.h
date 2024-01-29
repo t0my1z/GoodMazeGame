@@ -3,6 +3,7 @@
 #include "MazeElements/BaseWall.h"
 #include "MazeElements/BaseDoor.h"
 #include "Factories/MazeBaseFactory.h"
+#include "Builders/MazeBuilderBase.h"
 
 class MazeGame
 {
@@ -20,7 +21,9 @@ public:
 
 	void CreateMazeEx12();
 
-	void CreateMazeEx3(MazeBaseFactory*& factory, short offset);
+	void CreateMazeEx3(MazeBaseFactory* factory, short offset);
+
+	void CreateMazeEx4(MazeBuilderBase*& builder);
 
 private:
 
