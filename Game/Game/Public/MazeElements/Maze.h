@@ -2,6 +2,7 @@
 #include"BaseRoom.h"
 #include <vector>
 
+//Class used before we had a builder to create rooms
 class Maze
 {
 private:

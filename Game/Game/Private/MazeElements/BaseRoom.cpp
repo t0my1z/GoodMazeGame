@@ -30,13 +30,15 @@ void BaseRoom::GetNeighbourElements(std::vector<MazeElement*> elementsToCheck)
 {
 	for (size_t i = 0; i < elementsToCheck.size(); i++)
 	{
+		if (elementsToCheck[i] == this) continue;
+
 		if (elementsToCheck[i]->GetTransform().GetXPos() == m_transform.GetXPos())
 		{
-			if (elementsToCheck[i]->GetTransform().GetYPos() == m_transform.GetYPos() + 1)
+			if (elementsToCheck[i]->GetTransform().GetYPos() == m_transform.GetYPos() - 1)
 			{
 				neighbourElements[EDirection::Up] = elementsToCheck[i];
 			}
-			else if (elementsToCheck[i]->GetTransform().GetYPos() == m_transform.GetYPos() - 1)
+			else if (elementsToCheck[i]->GetTransform().GetYPos() == m_transform.GetYPos() + 1)
 			{
 				neighbourElements[EDirection::Down] = elementsToCheck[i];
 			}

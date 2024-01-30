@@ -16,6 +16,7 @@ int MazeConcreteFactory2::GetRandomNumber(int min, int max) const
 
 BaseRoom* MazeConcreteFactory2::AddRoom(Transform pos) const
 {
+    //Randomly create either a normal room or a bomb room
     int min = 0;
     int max = 3;
     int ran = GetRandomNumber(min, max);

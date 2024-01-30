@@ -1,8 +1,12 @@
 #pragma once
-//#include "../Transform.h"
+
 #include "../Transform.h"
 #include <string>
 
+//Base class for all the different elements in our maze
+//its the only thing the MazeGame will work with
+//All the elements that are based on this class have their own constructors so they can have whatever m_visual representation they want,
+//as their main objective in this project is to have a way to differentiate between them
 class MazeElement
 {
 private:
